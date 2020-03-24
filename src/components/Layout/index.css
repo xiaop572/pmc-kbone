@@ -2,9 +2,11 @@
     margin: 0;
     padding: 0;
 }
-body{
-    font-size:0.16rem;
+
+body {
+    font-size: 0.14rem;
 }
+
 .page {
     max-width: 750px;
     width: 100%;
@@ -15,10 +17,28 @@ body{
     margin: auto;
     background: #eee;
 }
-.tabbar{
+a{
+    text-decoration: none;
+}
+.tabbar {
     height: 0.6rem;
     width: 3.75rem;
-    background: blue;
     position: fixed;
     bottom: 0;
+    z-index: 10;
+}
+
+.tabbar a{
+    position: relative;
+    display: flex;
+    height: 0.58rem;
+    background-repeat: no-repeat;
+    background-position: center 4px;
+    background-size: 0.33rem;
+    align-items: flex-end;
+    justify-content: center;
+    float: left;
+}
+.active{
+    color:#00b38b
 }

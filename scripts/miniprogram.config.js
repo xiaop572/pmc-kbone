@@ -4,11 +4,13 @@
 
 module.exports = {
 	origin: 'https://test.miniprogram.com',
-	entry: '/test/aaa',
+	entry: '/',
 	router: {
 		index: [
-			'/test/aaa',
-			'/test/bbb',
+			'/',
+		],
+		my: [
+			'/my'
 		]
 	},
 	redirect: {
@@ -17,19 +19,31 @@ module.exports = {
 	},
 	generate: {
 		autoBuildNpm: 'npm',
-		
-    },
+
+	},
 	app: {
 		navigationBarTitleText: '温州和平国际医院',
+		navigationBarBackgroundColor: "#FFFFFF",
+		navigationBarTextStyle: "black"
 	},
 	appExtraConfig: {
-        sitemapLocation: 'sitemap.json',
+		sitemapLocation: 'sitemap.json',
 	},
 	global: {
-		rem:true,
-		pullDownRefresh:true
+		rem: true,
+		pullDownRefresh: true
 	},
-	pages: {},
+	pages: {
+		index: {
+			navigationBarBackgroundColor: "green"
+		},
+		my: {
+			pageBackgroundColor:"#000",
+			app: {
+				navigationBarTextStyle: 'black'
+			}
+		}
+	},
 	optimization: {
 		domSubTreeLevel: 10,
 
@@ -42,7 +56,7 @@ module.exports = {
 		attrValueReduce: 5000,
 	},
 	projectConfig: {
-        projectname: 'kbone-template-react',
+		projectname: 'kbone-template-react',
 		appid: 'wx3e7df055a294f697',
 	},
 }

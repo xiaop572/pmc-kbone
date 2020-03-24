@@ -1,11 +1,11 @@
 import React from 'react'
-import KboneUI from 'kbone-ui'
-import 'kbone-ui/lib/weui/weui.css'
+import './index.css'
 export default function index() {
-    console.log(KboneUI.KButton)
     return (
-        <div>
-            Index
+        <div className="page">
+            <div className="banner">
+                <img src="https://demo.linpc.cn/img/banner_03.jpg" alt=""/>
+            </div>
         </div>
     )
 }

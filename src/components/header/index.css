@@ -1,0 +1,11 @@
+.header{
+    height: 0.6rem;
+    background: #FFF;
+    overflow: hidden;
+}
+.logo{
+    height: 0.4rem;
+    margin:0.1rem 0 0.1rem 0.2rem;
+    background: url("https://demo.linpc.cn/img/logo.png") no-repeat;
+    background-size: auto 100%;
+}
