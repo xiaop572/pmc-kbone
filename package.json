@@ -16,7 +16,7 @@
     "fix": "eslint src --fix"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "kbone-ui": "^0.6.3",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
